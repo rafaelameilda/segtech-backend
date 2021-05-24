@@ -45,7 +45,6 @@ class CatalogServicesRepository implements ICatalogServicesRepository {
       .where("1=1");
 
     if (description) {
-      console.log(description);
       catalogServicesQuery.andWhere(
         "UPPER(c.description) LIKE UPPER('%'||:description||'%')",
         { description }
