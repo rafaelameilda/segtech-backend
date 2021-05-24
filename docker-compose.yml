@@ -6,7 +6,7 @@ services:
     container_name: segtech
     restart: always
     ports:
-      - 75432:5432
+      - 55432:5432
     environment:
       - POSTGRES_USER=docker
       - POSTGRES_PASSWORD=ignite
